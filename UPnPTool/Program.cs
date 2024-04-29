@@ -184,6 +184,7 @@ namespace UPnPTool
 
             // デバイス検索
             UPnPDeviceDiscover disvocer = new UPnPDeviceDiscover();
+            disvocer.SearchTargets = new List<string>() { "ssdp:all" };
             List<UPnPDeviceAccess> deviceAccesses = disvocer.FindDevicesAsync().Result;
 
             // 各デバイス情報取得
