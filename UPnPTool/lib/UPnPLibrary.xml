@@ -1,0 +1,637 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UPnPLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:UPnPLibrary.Description.Device.Device">
+            <summary>
+            UPnPデバイス情報管理クラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.DeviceType">
+            <summary>
+            URIで表されるUPnPデバイスタイプ
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.FriendlyName">
+            <summary>
+            エンドユーザー向けの概略説明
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.Manufacturer">
+            <summary>
+            メーカー名
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.ManufacturerURL">
+            <summary>
+            メーカーのWebサイト
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.ModelDescription">
+            <summary>
+            エンドユーザー向けの説明
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.ModelName">
+            <summary>
+            モデル名
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.ModelNumber">
+            <summary>
+            モデル番号
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.ModelURL">
+            <summary>
+            モデルのWebサイト
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.SerialNumber">
+            <summary>
+            シリアル番号
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.Udn">
+            <summary>
+            Unique Device Name<br/>
+            uuid:で始まる汎用一意識別子
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.Upc">
+            <summary>
+            Universal Product Code<br/>
+            12桁の数字で表される統一商品コード
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.IconList">
+            <summary>
+            デバイスのアイコン情報
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.ServiceList">
+            <summary>
+            UPnPサービス概要情報
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.DeviceList">
+            <summary>
+            組み込みデバイス情報
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Device.PresentationURL">
+            <summary>
+            デバイスの制御用Webサイト
+            </summary>
+        </member>
+        <member name="T:UPnPLibrary.Description.Device.Icon">
+            <summary>
+            デバイスのアイコン情報管理クラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Icon.Mimetype">
+            <summary>
+            アイコンのMIME画像タイプ
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Icon.Width">
+            <summary>
+            整数で表されるアイコンの横幅（px）
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Icon.Height">
+            <summary>
+            整数で表されるアイコンの縦幅（px）
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Icon.Depth">
+            <summary>
+            整数で表される色深度
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Icon.Url">
+            <summary>
+            HTTPで取得可能なアイコン画像のパス
+            </summary>
+        </member>
+        <member name="T:UPnPLibrary.Description.Device.Service">
+            <summary>
+            UPnPサービス概要情報管理クラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Service.ServiceType">
+            <summary>
+            URIで表されるUPnPサービスタイプ
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Service.ServiceId">
+            <summary>
+            URIで表されるサービス識別子
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Service.ControlURL">
+            <summary>
+            UPnPサービスのリクエスト用相対URL
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Service.EventSubURL">
+            <summary>
+            UPnPサービスのイベント生成用相対URL
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Service.ScpdUrl">
+            <summary>
+            Service Control Protocol Description<br/>
+            UPnPサービスの詳細情報取得用相対URL
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Service.ServiceTypeName">
+            <summary>
+            サービスタイプ名
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.Service.ServiceIdName">
+            <summary>
+            サービス識別名
+            </summary>
+        </member>
+        <member name="T:UPnPLibrary.Description.Device.DeviceDescription">
+            <summary>
+            UPnPデバイス情報管理クラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.DeviceDescription.SpecVersion">
+            <summary>
+            UPnPデバイスアーキテクチャのバージョン
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Device.DeviceDescription.Device">
+            <summary>
+            UPnPデバイス情報
+            </summary>
+        </member>
+        <member name="M:UPnPLibrary.Description.Device.DeviceDescription.GetServiceList">
+            <summary>
+            自身が管理している全てのServiceをリストにまとめて返す
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UPnPLibrary.Description.Device.DeviceDescription.GetServiceList(UPnPLibrary.Description.Device.Device)">
+            <summary>
+            指定したデバイスが管理している全てのServiceを再帰的にリストにまとめて返す
+            </summary>
+            <param name="device"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UPnPLibrary.Description.Service.StateVariableDataType">
+            <summary>
+            UPnPサービス状態変数のデータ型管理クラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.StateVariableDataType.DataType">
+            <summary>
+            状態変数のデータ型。type属性が存在する場合は常にstring
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.StateVariableDataType.Type">
+            <summary>
+            ベンダーが定義した拡張データ型
+            </summary>
+        </member>
+        <member name="T:UPnPLibrary.Description.Service.Action">
+            <summary>
+            UPnPサービスアクション情報管理クラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.Action.Name">
+            <summary>
+            アクション名
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.Action.ArgumentList">
+            <summary>
+            引数リスト
+            </summary>
+        </member>
+        <member name="T:UPnPLibrary.Description.Service.Argument">
+            <summary>
+            UPnPアクション引数情報管理クラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.Argument.Name">
+            <summary>
+            引数名
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.Argument.Direction">
+            <summary>
+            in:送信時に指定する引数<br/>
+            out:受信時に渡される引数
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.Argument.RelatedStateVariable">
+            <summary>
+            対応するstateVariable名
+            </summary>
+        </member>
+        <member name="T:UPnPLibrary.Description.Service.ServiceDescription">
+            <summary>
+            UPnPサービス詳細情報管理クラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.ServiceDescription.SpecVersion">
+            <summary>
+            UPnPデバイスアーキテクチャのバージョン
+            </summary>
+        </member>
+        <member name="F:UPnPLibrary.Description.Service.ServiceDescription.ActionList">
+            <summary>
+            サービスアクションリスト
+            </summary>
+        </member>
+        <member name="F:UPnPLibrary.Description.Service.ServiceDescription.ServiceStateTable">
+            <summary>
+            サービス状態変数リスト
+            </summary>
+        </member>
+        <member name="T:UPnPLibrary.Description.Service.AllowedValueRange">
+            <summary>
+            UPnPサービスにおける引数値の範囲を管理するクラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.AllowedValueRange.Minimum">
+            <summary>
+            引数の最小値
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.AllowedValueRange.Maximum">
+            <summary>
+            引数の最大値
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.AllowedValueRange.Step">
+            <summary>
+            引数の分割値。<br/>
+            Minimum0、step0の場合は0,1,2...を指定し、step5の場合は0, 5,10...を指定する
+            </summary>
+        </member>
+        <member name="T:UPnPLibrary.Description.Service.StateVariable">
+            <summary>
+            UPnPサービス状態変数管理クラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.StateVariable.SendEvents">
+            <summary>
+            状態変数が変化した時にイベントメッセージを生成するか
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.StateVariable.Multicast">
+            <summary>
+            イベントメッセージをマルチキャストイベンティングを使用して配信するか
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.StateVariable.Name">
+            <summary>
+            状態変数名
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.StateVariable.DataType">
+            <summary>
+            状態変数のデータ型
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.StateVariable.DefaultValue">
+            <summary>
+            期待値、又は初期値
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.StateVariable.AllowedValueRange">
+            <summary>
+            引数に指定される数値の範囲
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.Service.StateVariable.AllowedValueList">
+            <summary>
+            引数に指定される値のリスト
+            </summary>
+        </member>
+        <member name="T:UPnPLibrary.Description.SpecVersion">
+            <summary>
+            UPnPデバイスアーキテクチャのバージョン情報管理クラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.SpecVersion.Major">
+            <summary>
+            UPnPデバイスアーキテクチャのメジャーバージョン
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Description.SpecVersion.Minor">
+            <summary>
+            UPnPデバイスアーキテクチャのマイナーバージョン
+            </summary>
+        </member>
+        <member name="T:UPnPLibrary.Ssdp.MSearchRequestMessage">
+            <summary>
+            M-SEARCHリクエストメッセージクラス
+            </summary>
+        </member>
+        <member name="F:UPnPLibrary.Ssdp.MSearchRequestMessage.MULTICAST_IP">
+            <summary>
+            宛先マルチキャストアドレス
+            </summary>
+        </member>
+        <member name="F:UPnPLibrary.Ssdp.MSearchRequestMessage.MULTICAST_PORT">
+            <summary>
+            宛先ポート番号
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Ssdp.MSearchRequestMessage.Mx">
+            <summary>
+            M-SEARCHリクエストのタイムアウト時間（秒）
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Ssdp.MSearchRequestMessage.St">
+            <summary>
+            M-SEARCHリクエストの対象デバイス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Ssdp.MSearchRequestMessage.Append">
+            <summary>
+            M-SEARCHリクエストに追加するフィールド
+            </summary>
+        </member>
+        <member name="F:UPnPLibrary.Ssdp.MSearchRequestMessage.REQUEST_FORMAT">
+            <summary>
+            リクエスト雛形
+            </summary>
+        </member>
+        <member name="F:UPnPLibrary.Ssdp.MSearchRequestMessage._encoding">
+            <summary>
+            メッセージのエンコーディング
+            </summary>
+        </member>
+        <member name="M:UPnPLibrary.Ssdp.MSearchRequestMessage.#ctor(System.Int32,System.String,System.String)">
+            <summary>
+            MX値とST値を指定してメッセージ初期化
+            </summary>
+            <param name="mx">M-SEARCHリクエストのタイムアウト時間（秒）</param>
+            <param name="st">M-SEARCHリクエストの対象デバイス</param>
+            <param name="append">M-SEARCHリクエストに追加するフィールド</param>
+        </member>
+        <member name="M:UPnPLibrary.Ssdp.MSearchRequestMessage.CreateMessage">
+            <summary>
+            M-SEARCHメッセージ作成
+            </summary>
+            <returns>M-SEARCHメッセージ</returns>
+        </member>
+        <member name="M:UPnPLibrary.Ssdp.MSearchRequestMessage.CreateMessageAsByteArray">
+            <summary>
+            バイト配列でM-SEARCHメッセージ作成
+            </summary>
+            <returns>M-SEARCHメッセージ</returns>
+        </member>
+        <member name="T:UPnPLibrary.Ssdp.MSearchResponseMessage">
+            <summary>
+            M-SEARCHレスポンスメッセージクラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Ssdp.MSearchResponseMessage.Location">
+            <summary>
+            UPnPデバイス情報取得用URL
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Ssdp.MSearchResponseMessage.Message">
+            <summary>
+            応答メッセージ
+            </summary>
+        </member>
+        <member name="F:UPnPLibrary.Ssdp.MSearchResponseMessage.HEADER_FIELD_DELIMITER">
+            <summary>
+            ヘッダフィールドの区切り文字
+            </summary>
+        </member>
+        <member name="M:UPnPLibrary.Ssdp.MSearchResponseMessage.#ctor(System.String)">
+            <summary>
+            受信したバイト配列を指定してメッセージ初期化
+            </summary>
+            <param name="bytes">受信したバイト配列</param>
+        </member>
+        <member name="M:UPnPLibrary.Ssdp.MSearchResponseMessage.IsSuccess">
+            <summary>
+            リクエストが成功したか
+            </summary>
+            <returns>true:成功 false:失敗</returns>
+        </member>
+        <member name="T:UPnPLibrary.Ssdp.UPnPDeviceDiscover">
+            <summary>
+            UPnP対応デバイス検索クラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Ssdp.UPnPDeviceDiscover.LocalPort">
+            <summary>
+            リクエストの送信元ポート番号
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Ssdp.UPnPDeviceDiscover.SearchTimeoutSec">
+            <summary>
+            M-SEARCHリクエストのタイムアウト時間（秒）
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Ssdp.UPnPDeviceDiscover.SearchTargets">
+            <summary>
+            M-SEARCHリクエストの検出対象デバイス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Ssdp.UPnPDeviceDiscover.RequestMSearchMessages">
+            <summary>
+            デバイス検索に使用したM-SEARCHメッセージリスト
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.Ssdp.UPnPDeviceDiscover.ResponseMSearchMessages">
+            <summary>
+            M-SEARCHメッセージの応答メッセージリスト
+            </summary>
+        </member>
+        <member name="F:UPnPLibrary.Ssdp.UPnPDeviceDiscover.MAX_RESULT_SIZE">
+            <summary>
+            M-SEARCHレスポンスの最大サイズ
+            </summary>
+        </member>
+        <member name="M:UPnPLibrary.Ssdp.UPnPDeviceDiscover.FindDevicesAsync">
+            <summary>
+            UPnPデバイス検索
+            </summary>
+            <returns>発見したデバイスのアクセス情報</returns>
+        </member>
+        <member name="T:UPnPLibrary.UPnPClient">
+            <summary>
+            UPnPデバイスとの送受信を管理するクラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.UPnPClient.DeviceAccess">
+            <summary>
+            送受信先UPnPデバイスアクセス情報
+            </summary>
+        </member>
+        <member name="M:UPnPLibrary.UPnPClient.#ctor(UPnPLibrary.UPnPDeviceAccess)">
+            <summary>
+            送受信先UPnPデバイスを指定してインスタンスを初期化する
+            </summary>
+            <param name="deviceAccess">送受信先UPnPデバイスアクセス情報</param>
+        </member>
+        <member name="M:UPnPLibrary.UPnPClient.RequestDeviceDescriptionAsync">
+            <summary>
+            UPnPデバイス情報取得
+            </summary>
+            <returns>取得したUPnPデバイス情報</returns>
+        </member>
+        <member name="M:UPnPLibrary.UPnPClient.RequestServiceDescriptionAsync(UPnPLibrary.Description.Device.Service)">
+            <summary>
+            UPnPサービス詳細情報取得
+            </summary>
+            <param name="service">取得するUPnPサービス</param>
+            <returns>取得したUPnPサービス詳細情報</returns>
+        </member>
+        <member name="M:UPnPLibrary.UPnPClient.RequestUPnPActionAsync(UPnPLibrary.UPnPActionRequestMessage)">
+            <summary>
+            UPnPアクションリクエスト
+            </summary>
+            <param name="message">リクエストメッセージ</param>
+            <returns>レスポンスメッセージ</returns>
+            <exception cref="T:UPnPLibrary.UPnPActionException"></exception>
+        </member>
+        <member name="M:UPnPLibrary.UPnPClient.CreateUPnPActionException(System.String,System.String)">
+            <summary>
+            UPnPエラーを解析してUPnPアクションエラーインスタンスを返す
+            </summary>
+            <param name="responseXml">UPnPエラーが記載されたXML</param>
+            <param name="message">例外メッセージ</param>
+            <returns>生成したUPnPアクションエラーインスタンス</returns>
+        </member>
+        <member name="T:UPnPLibrary.UPnPDeviceAccess">
+            <summary>
+            UPnPデバイスアクセス情報
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.UPnPDeviceAccess.IpAddress">
+            <summary>
+            UPnPデバイスのIPアドレス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.UPnPDeviceAccess.UPnPUrl">
+            <summary>
+            UPnPデバイスへのリクエスト用URL
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.UPnPDeviceAccess.Location">
+            <summary>
+            UPnPデバイス情報取得用URL
+            </summary>
+        </member>
+        <member name="T:UPnPLibrary.UPnPActionException">
+            <summary>
+            UPnPアクションで発生したUPnPエラー管理クラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.UPnPActionException.ErrorCode">
+            <summary>
+            UPnPエラーのエラーコード<br/>
+            エラーコードの内容については下記URLのTable 3-3参照<br/>
+            https://openconnectivity.org/upnp-specs/UPnP-arch-DeviceArchitecture-v2.0-20200417.pdf
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.UPnPActionException.ErrorDescription">
+            <summary>
+            UPnPエラーの概略説明
+            </summary>
+        </member>
+        <member name="M:UPnPLibrary.UPnPActionException.#ctor">
+            <summary>
+            インスタンス初期化
+            </summary>
+        </member>
+        <member name="M:UPnPLibrary.UPnPActionException.#ctor(System.String)">
+            <summary>
+            例外メッセージを指定してインスタンス初期化
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:UPnPLibrary.UPnPActionException.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            各パラメータを指定してインスタンスを初期化
+            </summary>
+            <param name="faultCode"></param>
+            <param name="faultString"></param>
+            <param name="errorCode">UPnPエラーのエラーコード</param>
+            <param name="errorDescription">UPnPエラーの概略説明</param>
+            <param name="message">例外メッセージ</param>
+        </member>
+        <member name="T:UPnPLibrary.UPnPActionRequestMessage">
+            <summary>
+            UPnPアクションのリクエストメッセージクラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.UPnPActionRequestMessage.Service">
+            <summary>
+            リクエスト先サービス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.UPnPActionRequestMessage.ActionName">
+            <summary>
+            サービスアクション
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.UPnPActionRequestMessage.Arguments">
+            <summary>
+            アクション引数
+            </summary>
+        </member>
+        <member name="F:UPnPLibrary.UPnPActionRequestMessage.REQUEST_FORMAT">
+            <summary>
+            リクエスト雛形
+            </summary>
+        </member>
+        <member name="M:UPnPLibrary.UPnPActionRequestMessage.#ctor(UPnPLibrary.Description.Device.Service,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            リクエスト内容を指定してメッセージ初期化
+            </summary>
+            <param name="service">リクエスト先サービス</param>
+            <param name="actionName">サービスアクション</param>
+            <param name="arguments">アクション引数</param>
+        </member>
+        <member name="M:UPnPLibrary.UPnPActionRequestMessage.CreateMessage">
+            <summary>
+            リクエストメッセージ作成
+            </summary>
+            <returns>リクエストメッセージ</returns>
+        </member>
+        <member name="M:UPnPLibrary.UPnPActionRequestMessage.CreateArgmentXml">
+            <summary>
+            リクエストメッセージの引数部作成
+            </summary>
+            <returns>作成した引数部のメッセージ</returns>
+        </member>
+        <member name="T:UPnPLibrary.UPnPActionResponseMessage">
+            <summary>
+            UPnPアクションのレスポンスメッセージクラス
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.UPnPActionResponseMessage.StatusCode">
+            <summary>
+            HTTP応答のステータスコード
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.UPnPActionResponseMessage.Headers">
+            <summary>
+            HTTP応答ヘッダーのコレクション
+            </summary>
+        </member>
+        <member name="P:UPnPLibrary.UPnPActionResponseMessage.Parameters">
+            <summary>
+            レスポンスパラメータ
+            </summary>
+        </member>
+    </members>
+</doc>
